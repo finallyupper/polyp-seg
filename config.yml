@@ -1,0 +1,13 @@
+data: 
+  root: /data1/yoojinoh/codes/mlops/data
+  save_dir: /data1/yoojinoh/codes/mlops/polyp-seg/output
+
+train:
+  epochs: 30
+  lr: 0.0001
+
+default:
+  batch_size: 32
+  num_workers: 4
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
