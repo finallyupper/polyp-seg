@@ -41,19 +41,17 @@ class PolypDataset(Dataset):
 def get_data_loader(data_roots, metadata_root, batch_size, workers, mean, std):
     dataset_transforms = dict(
         train=transforms.Compose([
-        #    transforms.Resize((RESIZE_SIZE, RESIZE_SIZE)),
             transforms.RandomHorizontalFlip(),
-            transforms.RandomRotation(degrees=15),   
+            transforms.RandomRotation(degrees=15),  
+            transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1), #Add(Yoojin) 
             transforms.ToTensor(),
             transforms.Normalize(mean, std)
         ]),
         val=transforms.Compose([
-        #    transforms.Resize((RESIZE_SIZE, RESIZE_SIZE)),
             transforms.ToTensor(),
             transforms.Normalize(mean, std)
         ]),
         test=transforms.Compose([
-        #    transforms.Resize((RESIZE_SIZE, RESIZE_SIZE)),
             transforms.ToTensor(),
             transforms.Normalize(mean, std)
         ]))

@@ -1,10 +1,10 @@
 data: 
   root: /data1/yoojinoh/codes/mlops/data
-  save_dir: /data1/yoojinoh/codes/mlops/polyp-seg/output
+  save_dir: /data1/yoojinoh/codes/mlops/polyp-seg/
 
 train:
-  epochs: 30
-  lr: 0.0001
+  epochs: 50
+  lr: 0.0005 # 0.0001
 
 default:
   batch_size: 32
