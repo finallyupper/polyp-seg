@@ -3,6 +3,7 @@ This project defines a binary semantic segmentation task using colonoscopy image
 
 - Download dataset from https://www.kaggle.com/datasets/balraj98/cvcclinicdb and run `setup.py` to split dataset into train/valid/test for hold-out validation. (I provided in `data/metadata` for reproducibility)  
 - **NOTE**: If you just want to test the model, download the checkpoint from [here](https://drive.google.com/file/d/1bvz2WSxLjC37cq_vlq4GzmUmXcx8RHG_/view?usp=sharing).
+- You can see short EDA on `eda.ipynb`.
 
 ## Getting Started
 Create Virtual Environment and install all dependent packages (requirements can be found at `requirements.txt`):
